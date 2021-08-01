@@ -83,6 +83,19 @@ Ben ```` vios_l2-adventerprisek9-m.03.2017.qcow2 ```` kullandım.
 
 bu kısımdan import edip next'e tıklıyoruz.
 
+## Docker Container nedir, nasıl kurulur?
+
+Docker, container adı verilen yazılım paketlerini çalıştırmak için kullanılmaktadır. Konteynerler birbirinden izole edilmiş ve bağımsız halde çalışabilmektedir. Tüm container tek bir işletim sistemi çekirdeği üzerinde çalışır ve bu sayede sanal makinelerden daha hafiftir. Konteynerler "imaj" (image) adı verilen salt-okunur dosya sistemlerinden oluşturulur.
+
+Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza imkan tanıyan bir yazılım platformudur. Docker, yazılımları kitaplıklar, sistem araçları, kod ve çalışma zamanı dahil olmak üzere yazılımların çalışması için gerekli her şeyi içeren container adlı standartlaştırılmış birimler halinde paketler. Docker'ı kullanarak her ortama hızla uygulama dağıtıp uygulamaları ölçeklendirebilir ve kodunuzun çalışacağından emin olabilirsiniz.
+
+### Kurulumu
+ Çalışma alanına sürükleyip nextleyerek direkt kullanıma hazır hale gelmektedir.
+ 
+ - internete çıkartmak için nat yerleştirebiliriz.
+ - Aralarına da bir ethernet switch eklenmeli.
+ - ![image](https://user-images.githubusercontent.com/45692102/127781067-920b7e0f-29f7-4783-99e2-4c3fcc99b76a.png)
+- docker üzerinde edit config kısmına gelip fotoğrafta en altta görünen görünen # auto eth0 # iface eth0 inet dhcp kısmından "#" işaretlerini kaldırıp bunları etkinleştirmemiz gerekmektedir.
 
 
 

@@ -44,7 +44,7 @@ Bu şekilde loopback'i kullanabiliriz.
 
 ![image](https://user-images.githubusercontent.com/45692102/127766136-e71d5fc4-93a3-4e73-882c-dea3d4302c82.png)
 
-**Kayıtlı image yoksa burası bu şekilde boş gelir.**
+**Kayıtlı imaj yoksa burası bu şekilde boş gelir.**
 
 c7200-adventerprisek9-mz.153-3.XB12.image download bu şekilde googledan bir image yükleyebilirsiniz.
 

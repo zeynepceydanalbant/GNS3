@@ -16,7 +16,7 @@ GNS3(Graphical Network Simulator) açık kaynak kodlu bir emülatör  programıd
  ### Loopback adresi ne demek?
 Localhost arka planda 127.0.0.1 Ip Adresidir. Bilgisayarin kendisine TCP/IP üzerinde erismesini saglamak için loopback aygiti adi verilen sanal bir ag karti olusturularak giden veriler bu adrese yönlendirilir.
 
-### GNS3 Lookpack Interface Ekleme
+### GNS3 Lookback Interface Ekleme
  Fiziksel pc'den GNS3'teki bir routera bağlanmamız gerekiyor bu ve benzeri nedenlerden Loopback kurulumu yapmalıyız. 
 ##### Kurulum;
  - GNS3'nin alt klasöründe Loopback Manager yönetici olarak çalıştırılmalıdır.
@@ -35,5 +35,44 @@ Localhost arka planda 127.0.0.1 Ip Adresidir. Bilgisayarin kendisine TCP/IP üze
  ![image](https://user-images.githubusercontent.com/45692102/127765481-ddeea883-659e-4b1b-84a9-44cbcd8b8786.png)
 Bu şekilde loopback'i kullanabiliriz.
  
+ 
+ ## Cisco Router Nedir, Nasıl Eklenir?
+ Cisco router, IP paketlerini bir ağdan diğerine taşımaya yarayan cihazlara verilen isimdir, Türkçe ismi ile “yönlendirici” olarak bilinmektedir. Cisco Router ürünleri; ana kart, işlemci, ROM ve RAM'den oluşmaktadır. Cisco Router cihazlarının diğer ürünler ile iletişim kurabilmesi için ara yüzleri bulunur.
+ -Setup Wizarddan son aşamaya geliyoruz
+ ![image](https://user-images.githubusercontent.com/45692102/127766096-03ce7b53-5348-4eea-a134-0b0c5230a768.png)
+![image](https://user-images.githubusercontent.com/45692102/127766116-1d05ffc0-f7fe-4380-85ed-49db8a999f7b.png)
+
+![image](https://user-images.githubusercontent.com/45692102/127766136-e71d5fc4-93a3-4e73-882c-dea3d4302c82.png)
+
+**Kayıtlı image yoksa burası bu şekilde boş gelir.**
+
+c7200-adventerprisek9-mz.153-3.XB12.image download bu şekilde googledan bir image yükleyebilirsiniz.
+
+Daha sonra bu şekilde gözükecektir.
+
+![image](https://user-images.githubusercontent.com/45692102/127766293-d44122b0-91f5-48fa-b2b7-142e026aaf15.png)
+
+![image](https://user-images.githubusercontent.com/45692102/127766335-a6a5568d-af15-47a0-9cb4-80ea4aca1743.png)
+
+**Bu kısımdan isim verebilirsiniz** Next diyoruz.
+
+![image](https://user-images.githubusercontent.com/45692102/127766360-768048b9-1a22-49b7-9d9d-14c7fd7769ff.png)
+
+**Bu kısımda ne kadar ram ayıracağımızı seçiyoruz.**
+
+![image](https://user-images.githubusercontent.com/45692102/127766412-3ee7f997-8051-47ca-a713-ecc6d7f722fa.png)
+
+**Idle-Pc Finder'ı çalıştırıyoruz.**
+
+En son finish'e basıyoruz ve artık işlemimiz tamamlanmış oluyor.
+
+![image](https://user-images.githubusercontent.com/45692102/127766465-d0c789c5-a339-4a65-ae28-ff54dcc6228d.png)
+
+
+
+
+
+
+
 
 

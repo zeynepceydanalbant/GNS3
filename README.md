@@ -29,3 +29,11 @@ Localhost arka planda 127.0.0.1 Ip Adresidir. Bilgisayarin kendisine TCP/IP üze
    - 6- Çıkış
 - Yeni bir loopback oluşturacağımız için 2'yi seçiyoruz.
 - Oluşturduğumuz loopback interface'in etkinleşmesi için bilgisayarı kapatıp açmamız (reboot) gerekiyor. Bunu kendinizde yapabilirsiniz 5. seçeneği de seçebilirsiniz.
+- Denetim masası (Control Panel) --> Ağ ve İnternet (Network and Internet) --> Ağ ve Paylaşım Merkezi (Network and Sharing Centre) --> Bağdaştırıcı Ayarlarını Değiştirin (Change adapter settings) --> Ethernet tanımlanmayan ağ (Unidentified network) bu bizim oluşturduğumuz loopback bizim buna ip adresi atamamız gerekmektedir.
+- Üzerinde sağ tıklayıp özellikleri açıyoruz. (Properties)
+- TCP/IPv4 e tıklayıp ip atamasını yapıyoruz. Buradan static bir ip adresi verebiliriz. Örneğin;
+ ![image](https://user-images.githubusercontent.com/45692102/127765481-ddeea883-659e-4b1b-84a9-44cbcd8b8786.png)
+Bu şekilde loopback'i kullanabiliriz.
+ 
+
+

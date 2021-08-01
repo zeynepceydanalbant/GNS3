@@ -68,6 +68,21 @@ En son finish'e basıyoruz ve artık işlemimiz tamamlanmış oluyor.
 
 ![image](https://user-images.githubusercontent.com/45692102/127766465-d0c789c5-a339-4a65-ae28-ff54dcc6228d.png)
 
+## Cisco Switch nedir, nasıl eklenir?
+ Bilgisayar ağlarında kullanılan Switch veya Switch'ler birden fazla bilgisayarın veya diğer aygıtların haberleşmesine olanak sağlar. Anahtarların en temel çalışma prensibi IP paketlerini hedef bilgisayara filtreler ve iletir.
+
+Switchler MAC adres tablosu (CAM tablosu) kullanarak ağ üzerindeki bilgisayarların MAC adresi ve IP adreslerini bu tabloya kaydeder. İlk defa bir dosya gönderecek bilgisayar, hedef bilgisayarın MAC adresi ve IP adresini IP Paketi içerisine yazması gerekecektir. Fakat, paket gönderen bilgisayar, hedef bilgisayarın MAC adresini bilmiyorsa, ağ ortamına bir ARP (Address Resolution Protocol - Adres Çözümleme Protokolü) yayını yapar.
+
+### Kurulum
+
+İstediğimiz switch'i sürükle bırak yöntemi ile ekrana koyduğumuzda kurulum otomatik başlatılacaktır. Daha sonra önceden indirmiş olduğumuz switch ile bağlantısını kuruyoruz.
+Ben ```` vios_l2-adventerprisek9-m.03.2017.qcow2 ```` kullandım.
+
+![image](https://user-images.githubusercontent.com/45692102/127780670-404f59ec-9d10-4c5d-9ca5-f6be2c7ea4db.png)
+
+
+bu kısımdan import edip next'e tıklıyoruz.
+
 
 
 

@@ -97,6 +97,9 @@ Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza 
  - ![image](https://user-images.githubusercontent.com/45692102/127781067-920b7e0f-29f7-4783-99e2-4c3fcc99b76a.png)
 - docker üzerinde edit config kısmına gelip fotoğrafta en altta görünen görünen # auto eth0 # iface eth0 inet dhcp kısmından "#" işaretlerini kaldırıp bunları etkinleştirmemiz gerekmektedir.
 
+VMware sanal makine ekleme
+ilk topoloji
+
 
 
 

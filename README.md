@@ -97,10 +97,14 @@ Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza 
  - ![image](https://user-images.githubusercontent.com/45692102/127781067-920b7e0f-29f7-4783-99e2-4c3fcc99b76a.png)
 - docker üzerinde edit config kısmına gelip fotoğrafta en altta görünen görünen # auto eth0 # iface eth0 inet dhcp kısmından "#" işaretlerini kaldırıp bunları etkinleştirmemiz gerekmektedir.
 
-VMware sanal makine ekleme
-ilk topoloji
+## VMware sanal makine ekleme
 
-
+- https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ sitesinden virtual machine olarak MSEdge on win10 Stable, choose a VM platform olarakta daha önce VMware kurduğumuz için VMware'i seçip indiriyoruz.
+- Daha sonra VMware'i açıp open virtual machine'ı seçiyoruz.
+- Yüklediğimiz dosyayı seçiyoruz ve import ediyoruz.
+- GNS3 setup wizard'ı açıp nextleyerek son kısıma geliyoruz ve add a VMware virtual machine seçeneğini seçiyoruz.
+- Çıkan ekranda önce ok deyip daha sonra gelen ekranda VM listesinde yüklediğimiz dosyayı seçiyoruz.
+- Yüklememiz tamamlanıyor.
 
 
 

@@ -106,9 +106,23 @@ Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza 
 - Çıkan ekranda önce ok deyip daha sonra gelen ekranda VM listesinde yüklediğimiz dosyayı seçiyoruz.
 - Yüklememiz tamamlanıyor.
 
-* udhcpc failed to get a DHCP lease while configuring networking hatası
-* unable to locate python3 hatası
-* sudo command not found hatası
+## udhcpc failed to get a DHCP lease while configuring networking hatası
+ 
+ İnternete çıkarmak istediğimiz ve NAT'a bağladığımız bir araçta alabileceğimiz olası hatalardan biride bu hatadır. IP ataması yapılamaz ve internet bağlantısı gerçekleşemez.
+ Bu hatanın bazı çözüm yolları bulunmaktadır.
+ - docker üzerinde edit config kısmında en altta görünen görünen # auto eth0 # iface eth0 inet dhcp kısmından "#" işaretlerini kaldırmayı unutmuş olabilirsiniz.
+ - auto eth0 ve iface eth0 inet dhcp etkinleştirmesini yapmış olmanıza rağmen hala aynı hatayı alıyorsanız docker'i ya da kullandığınız device her ise reboot etmelisiniz.
+ - Hata devam ediyorsa NAT'in ne üzerinde çalıştığını kontrol ediniz. Desktop üzerinde çalıştığı için güvenlik sebebiyle bu hatayı almanız mümkün bu sebeple GNS VM üzerinde çalıştırmayı deneyin.
+ - Hata devam ediyorsa device'ı silip tekrar ekrana sürükleyin ve en başında yaptığımız etkinleştirme adımını konsol üzerinden yapın.(nano etc/network/interfaces)
+ 
+ 
+ 
+## unable to locate python3 hatası
+ İnternet bağlantısını kurduktan sonra herhangi bir indirme işlemi yapacakken unable to locate xxx hatası alabiliyoruz.
+ - Doğru yazdığınızdan emin olun
+ - Sorun yetkilerden kaynaklı olabilir o yüzden başına sudo ekleyerek tekrar yazın
+ - Eğer bunun üzerine sudo command not found hatası alırsanız çözümü aşağıda...
+ - 
 
 
 

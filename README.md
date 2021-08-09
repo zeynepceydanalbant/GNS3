@@ -122,7 +122,14 @@ Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza 
  - Doğru yazdığınızdan emin olun
  - Sorun yetkilerden kaynaklı olabilir o yüzden başına sudo ekleyerek tekrar yazın
  - Eğer bunun üzerine sudo command not found hatası alırsanız çözümü aşağıda...
- - 
+ 
+ 
+ ## sudo command not found hatası
+  Bazı ubuntu sürümleri en basic şekilde gelebilir bu sebeple sudo komutu çalışmayabilir. Bu sebeple cihazınızı güncellemelisiniz.
+  
+ 1-  ```apt-get update```
+ 2-  ```apt-get install sudo```
+   
 
 
 

@@ -106,6 +106,10 @@ Docker, uygulamalarınızı hızla derlemenize, test etmenize ve dağıtmanıza 
 - Çıkan ekranda önce ok deyip daha sonra gelen ekranda VM listesinde yüklediğimiz dosyayı seçiyoruz.
 - Yüklememiz tamamlanıyor.
 
+* udhcpc failed to get a DHCP lease while configuring networking hatası
+* unable to locate python3 hatası
+* sudo command not found hatası
+
 
 
 

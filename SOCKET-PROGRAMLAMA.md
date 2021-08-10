@@ -94,15 +94,15 @@ def client_program():
 
 client_program()
 
-
-
-
-
-
-
-
-
 ```
 
+# SONUÇ
+
+- Öncelikle ``` python3 server.py ```  komutu ile server'i çalıştırınız.
+- Daha sonra diğer cihazdan  ``` python3 client.py ```  komutu ile client'i çalıştırınız.
+![image](https://user-images.githubusercontent.com/45692102/128880805-03b1806a-c04d-4bd1-b5e3-3c0fc1e064e4.png)
+
+
+**Benim server.py ve client.py dosyalarımda farklı kodlar olduğundan dosya ismim server3 ve client3'tür.**
 
 

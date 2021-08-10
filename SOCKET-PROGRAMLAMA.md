@@ -50,6 +50,59 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:   # soket olusturma
       cevap= input("Client'e mesajiniz:")                       #client'a göndermek istediğimiz mesaj
       conn.sendall(str(cevap).encode())                         # mesajı serverdan client a cevap olarak iletme
 ```
+## Örnek Client Dosyası
+
+```nano client.py```
+terminal üzerinden bu komutu yazarak client adında bir pyhton dosyası oluşturmuş oluyoruz. Dosyanın içine kodlarımızı yazıp kaydedebiliriz.
+
+```
+import timeit
+import sys
+import socket
+
+def client_program():
+    host = "10.1.1.1" # baglanacagimiz server'in ip adresi
+    port = 5000       #baglanacagimiz port numarasi
+
+    client_socket = socket.socket()     #client oluşturma
+    client_socket.connect((host, port)) #sunucuya baglanma
+
+    message = input("Mesajinizi giriniz: ")
+
+
+    devam = 1
+    while devam != '2':                #kullanici 2 girene kadar islemlerini devam ettirme
+
+        start = timeit.timeit()
+        rtt = (end - start) * 100000   # sayaci baslatma
+        client_socket.send(message.encode())      # mesaj gonderme
+        data = client_socket.recv(1024).decode()  # cevap alma
+        
+        end = timeit.timeit()               # sayaci durdurma
+        rtt = (end - start) * 100000        # geçen süre hesabı
+        
+        print('Round Trip Time: : ' + str(rtt))  # (rtt) sureyi yazdirma
+
+        print("Serverdan gelen cevap : " + data) # serverdan gelen cevabi terminalde gosterme
+
+        devam = input("Devam etmek icin 1, Cikmak icin 2 yaziniz: ") # cikis veya devam sorgusu
+        if(devam == '2'):
+            break
+
+        message = input("Mesajinizi giriniz: ")
+  client_socket.close()   # baglantiyi kapatma
+
+client_program()
+
+
+
+
+
+
+
+
+
+```
 
 
 
